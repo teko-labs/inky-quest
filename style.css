@@ -1,0 +1,72 @@
+/* The two pages of the game's site: the lagoon behind, an ivory card in front. */
+:root {
+  --deep: #0e3552;
+  --ink: #12304a;
+  --ink-soft: #56718a;
+  --ivory: #fff4e2;
+  --ivory-deep: #d8c3a5;
+  --gold: #ffc233;
+  --water-top: #b9f0ee;
+  --water-low: #1f8fc9;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 32px 16px 48px;
+  background: linear-gradient(var(--water-top), var(--water-low)) fixed;
+  color: var(--ink);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 28px 36px;
+  background: var(--ivory);
+  border-radius: 28px;
+  border-bottom: 6px solid var(--ivory-deep);
+  box-shadow: 0 18px 40px rgba(14, 53, 82, 0.28);
+}
+
+header { text-align: center; }
+
+header img { width: 128px; height: 128px; border-radius: 28px; }
+
+h1 { margin: 12px 0 4px; font-size: 2.3rem; line-height: 1.15; color: var(--deep); }
+
+h2 { margin: 32px 0 8px; font-size: 1.25rem; color: var(--deep); }
+
+p, ul { margin: 0 0 14px; }
+
+ul { padding-left: 22px; }
+
+li { margin-bottom: 6px; }
+
+a { color: #0b5f9e; }
+
+.lead { font-size: 1.15rem; color: var(--ink); }
+
+.soft { color: var(--ink-soft); }
+
+.note {
+  margin: 20px 0;
+  padding: 14px 18px;
+  background: #ffffff;
+  border-radius: 16px;
+  border-left: 6px solid var(--gold);
+}
+
+footer {
+  max-width: 720px;
+  margin: 20px auto 0;
+  text-align: center;
+  color: var(--deep);
+  font-size: 0.95rem;
+}
+
+footer a { color: var(--deep); }
